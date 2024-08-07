@@ -1,0 +1,37 @@
+body{
+    background-color: pink;
+}
+.images {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.image {
+    height: 200px;
+    width: 200px;
+    overflow: hidden;
+    min-width: 150px;
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all .5s ease;
+
+}
+
+img:hover {
+    transform: scale(1.1);
+}

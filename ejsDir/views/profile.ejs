@@ -1,0 +1,22 @@
+<%- include("./components/head.ejs")%> <!--will use components folder -->
+<body>
+    <h1>Profile Page <%= username %> </h1>
+    <h3>Name <%= user.name %> </h3>
+    <h4> Followers <%= user.followers%> Following <%= user.following%></h4>
+    <hr>
+    <div class="images">
+        <% for (post of user.posts) {%>
+            <div class="post">
+                <div class="image">
+                    <img src="<%=post.image%>" alt="">
+                </div>    
+                <p><span><%=post.likes%> ❤</span> <span><%= post.comments%></span></p>
+            </div>
+        <% } %>
+    </div>
+    
+    
+    <h6>Total posts: <%= user.posts.length%></h6>
+    <script src="/js/app.js"></script>
+</body>
+</html>
