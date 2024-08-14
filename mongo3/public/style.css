@@ -1,0 +1,24 @@
+.chat{
+    background-color: grey;
+    border-bottom: 1px solid burlywood;
+    margin-bottom: .5rem;
+    padding: 1rem;
+}
+.newchat{
+    position: absolute;
+    right: 30px;
+    font-size: 1.5rem;
+    bottom: 30px;
+    padding: 1rem 1.5rem;
+    background-color: burlywood;
+    color: white;
+    border-radius: .5rem;
+    border: none;
+    cursor: pointer;
+    transition: all 2s ease;
+    &:hover{
+        scale: 1.1;
+        border: 1px solid gray;
+        box-shadow: 4px 3px 4px 0px black;
+    }
+}

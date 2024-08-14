@@ -41,9 +41,7 @@ app.get("/", (req, res) => {
   } catch (err) {
     console.log(err);
     res.status(505).send("Internal Server Error!");
-  } finally {
-    // connection.end();
-  }
+  } 
 });
 
 app.get("/user", (req, res) => {
