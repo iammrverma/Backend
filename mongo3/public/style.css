@@ -5,7 +5,7 @@
     padding: 1rem;
 }
 .newchat{
-    position: absolute;
+    position: fixed;
     right: 30px;
     font-size: 1.5rem;
     bottom: 30px;
@@ -15,10 +15,27 @@
     border-radius: .5rem;
     border: none;
     cursor: pointer;
-    transition: all 2s ease;
+    transition: all .5s ease;
     &:hover{
-        scale: 1.1;
+        transform: scale(1.1);
         border: 1px solid gray;
-        box-shadow: 4px 3px 4px 0px black;
+        box-shadow: 4px 3px 1px 0px black;
+    }
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+    gap: 1rem;
+
+
+    & input,
+    textarea{
+        padding: .5rem 1rem;
+    }
+    & button{
+        padding: .5rem 0;
     }
 }

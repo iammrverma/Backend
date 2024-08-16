@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form action="http://localhost:3000/chat" method="post" class="form">
+      <div class="">
+        <input type="text" name="from" placeholder="from" required />
+        <input type="text" name="to" placeholder="to" required />
+      </div>
+
+      <textarea
+        type="text"
+        rows="10"
+        name="message"
+        placeholder="Enter your message"
+        required
+        minlength="1"
+      ></textarea>
+      <button type="submit">Chat</button>
+    </form>
+  </body>
+</html>
